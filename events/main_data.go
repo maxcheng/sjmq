@@ -574,6 +574,20 @@ type StoreUpdated struct {
 	CreatedByID       *uint     `json:"created_by_id"`       // 建檔人關聯ID
 }
 
+
+type SubjectDeleted struct {
+	ID uint `json:"id"`
+}
+
+type SubjectUpdated struct {
+	ID                uint      `json:"id"`                  // ID
+	CreatedAt         time.Time `json:"created_at"`          // 建檔日期
+	UpdatedAt         time.Time `json:"updated_at"`          // 修改日期
+	No                string    `json:"no"`                  // 編號
+	Name              string    `json:"name"`                // 名稱
+}
+
+
 type WarehouseDeleted struct {
 	ID uint `json:"id"`
 }
